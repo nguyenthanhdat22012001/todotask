@@ -1,0 +1,43 @@
+//config
+html{
+    font-size: 62.5% ; // 1rem = 10px
+}
+body{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+}
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+  }
+  //style
+  .wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+//mixin 
+@mixin flexbox($align: flex-start, $justify: flex-start, $wrap: nowrap,$dir: row) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+}
+
+.container{
+    max-width: 1210px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto;
+}
+.d-flex{
+    @include flexbox('center','space-between');
+}
