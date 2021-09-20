@@ -21,18 +21,12 @@ class Task extends React.Component {
                 <img 
                 className={this.state.task.done ? "task__item-btn opacity-0" : 'task__item-btn'} 
                 onClick={()=> this.props.completeTask(this.state.task.id)} 
-                src={
-                    process.env.PUBLIC_URL+
-                    "/assets/check.png"
-                }
+                src="./assets/check.png"
                 alt="" />
                 <img 
                 className="task__item-btn" 
                 onClick={()=> this.props.deleteTask(this.state.task.id)} 
-                src={
-                    process.env.PUBLIC_URL+
-                    "/assets/delete.png"
-                } 
+                src="./assets/delete.png"
                 alt="" />
             </li>
         )

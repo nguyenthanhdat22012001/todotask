@@ -67,10 +67,7 @@ class ListTask extends React.Component {
             <div className="task__inner">
               <img
                 className="task__img"
-                src={
-                    process.env.PUBLIC_URL+
-                    "/assets/plus.png"
-                }
+                src="./assets/plus.png"
                 alt="add task"
                 onClick={this.addTask} />
               <input className="task__input"
